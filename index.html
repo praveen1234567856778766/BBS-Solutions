@@ -725,103 +725,130 @@
     </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Contact</h2>
-        <div><span>Contact</span> <span class="description-title">Us</span></div>
-      </div><!-- End Section Title -->
+<section id="contact" class="contact section">
+  <div class="container section-title">
+    <h2>Contact</h2>
+    <div><span>Contact</span> <span class="description-title">Us</span></div>
+  </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="contact-info">
-              <div class="contact-card">
-                <h3>Contact Information</h3>
-                <p>Feel free to reach out with any questions about the book, speaking engagements, or media inquiries.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out with any questions about the book, speaking engagements, or media inquiries.</p>
 
-                <div class="contact-details">
-                  <div class="contact-item">
-                    <i class="bi bi-envelope"></i>
-                    <div>
-                      <h4>Email:</h4>
-                      <p>
-  <a href="mailto:samsanthosh899@gmail.com">samsanthosh899@gmail.com</a>
-</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    <div>
-                      <h4>Phone:</h4>
-                      <p>+91 9884050379</p>
-                     <p>
-  <a href="https://wa.me/919884050379?text=Hello%20BB%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services." target="_blank" style="text-decoration: none; color: #25D366;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
-    Chat with us on WhatsApp
-  </a>
-</p>
-
-                    </div>
-                  </div>
-
-                  <div class="contact-item">
-                    <i class="bi bi-geo-alt"></i>
-                    <div>
-                      <h4>Address:</h4>
-                      <p>Chennai Tamil Nadu 600057</p>
-                    </div>
-                  </div>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p><a href="mailto:samsanthosh899@gmail.com">samsanthosh899@gmail.com</a></p>
                 </div>
+              </div>
 
-                <div class="social-links">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
+              <div class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <h4>Phone:</h4>
+                  <p>+91 9884050379</p>
+                  <p>
+                    <a href="https://wa.me/919884050379?text=Hello%20BB%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services."
+                       target="_blank" style="text-decoration: none; color: #25D366;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                           alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
+                      Chat with us on WhatsApp
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h4>Address:</h4>
+                  <p>Chennai Tamil Nadu 600057</p>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-7">
-            <div class="contact-form-wrapper">
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required="">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <label for="email">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required="">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="I loved your book!" required="">
-                </div>
-                <div class="form-group mt-3">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" name="message" rows="7" placeholder="Your message here..." required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-form-wrapper">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" class="form-control" placeholder="+91 9876543210" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4" style="height:120px;" placeholder="Your message here..." required></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End Contact Form -->
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS Integration -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init({
+      publicKey: "kkIs0AW_QWCwwpPYk" // ✅ Your EmailJS Public Key
+    });
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const params = {
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+      time: new Date().toLocaleString()
+    };
+
+    emailjs.send("service_wghet5k", "template_urke8fl", params)
+      .then(function(response) {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contactForm").reset();
+      }, function(error) {
+        alert("❌ Failed to send: " + JSON.stringify(error));
+      });
+  });
+</script>
+
 
   </main>
 
