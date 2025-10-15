@@ -727,8 +727,8 @@
     <!-- Contact Section -->
 <section id="contact" class="contact section">
   <div class="container section-title">
-    <h2>Contact</h2>
-    <div><span>Contact</span> <span class="description-title">Us</span></div>
+    <h2 style="color:#2c3e50;">Contact</h2>
+    <div><span style="color:#2980b9;">Contact</span> <span class="description-title">Us</span></div>
   </div>
 
   <div class="container">
@@ -736,14 +736,14 @@
       <div class="col-lg-5">
         <div class="contact-info">
           <div class="contact-card">
-            <h3>Contact Information</h3>
+            <h3 style="color:#2c3e50;">Contact Information</h3>
             <p>Feel free to reach out with any questions about the book, speaking engagements, or media inquiries.</p>
 
             <div class="contact-details">
               <div class="contact-item">
                 <i class="bi bi-envelope"></i>
                 <div>
-                  <h4>Email:</h4>
+                  <h4 style="color:#2980b9;">Email:</h4>
                   <p><a href="mailto:samsanthosh899@gmail.com">samsanthosh899@gmail.com</a></p>
                 </div>
               </div>
@@ -751,10 +751,10 @@
               <div class="contact-item">
                 <i class="bi bi-telephone"></i>
                 <div>
-                  <h4>Phone:</h4>
-                  <p>+91 9884050379</p>
+                  <h4 style="color:#2980b9;">Phone:</h4>
+                  <p>+91 9876543210</p>
                   <p>
-                    <a href="https://wa.me/919884050379?text=Hello%20BB%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services."
+                    <a href="https://wa.me/919876543210?text=Hello%20BB%20Solutions%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services."
                        target="_blank" style="text-decoration: none; color: #25D366;">
                       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                            alt="WhatsApp" style="width:20px; vertical-align:middle; margin-right:8px;">
@@ -767,7 +767,7 @@
               <div class="contact-item">
                 <i class="bi bi-geo-alt"></i>
                 <div>
-                  <h4>Address:</h4>
+                  <h4 style="color:#2980b9;">Address:</h4>
                   <p>Chennai Tamil Nadu 600057</p>
                 </div>
               </div>
@@ -789,27 +789,40 @@
           <form id="contactForm">
             <div class="row">
               <div class="col-md-6 form-group">
-                <label for="name">Your Name</label>
+                <label for="name" style="color:#2980b9;">Your Name</label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <label for="email">Your Email</label>
+                <label for="email" style="color:#2980b9;">Your Email</label>
                 <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
               </div>
             </div>
 
             <div class="form-group mt-3">
-              <label for="phone">Phone</label>
-              <input type="text" id="phone" name="phone" class="form-control" placeholder="+91 9876543210" required>
+              <label for="phone" style="color:#2980b9;">Phone</label>
+              <input type="text" id="phone" name="phone" class="form-control" placeholder="+91 9999999999" required>
             </div>
 
             <div class="form-group mt-3">
-              <label for="message">Message</label>
+              <label for="message" style="color:#2980b9;">Message</label>
               <textarea id="message" name="message" class="form-control" rows="4" style="height:120px;" placeholder="Your message here..." required></textarea>
             </div>
 
-            <div class="text-center">
-              <button type="submit">Send Message</button>
+            <div class="text-center mt-3">
+              <button type="submit" style="
+                background: linear-gradient(45deg, #6a11cb, #2575fc);
+                color: #fff;
+                border: none;
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: transform 0.2s;
+              " 
+              onmouseover="this.style.transform='scale(1.05)';" 
+              onmouseout="this.style.transform='scale(1)';">
+                Send Message
+              </button>
             </div>
           </form>
         </div>
@@ -823,14 +836,11 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
   (function() {
-    emailjs.init({
-      publicKey: "kkIs0AW_QWCwwpPYk" // ✅ Your EmailJS Public Key
-    });
+    emailjs.init({ publicKey: "kkIs0AW_QWCwwpPYk" });
   })();
 
   document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
-
     const params = {
       from_name: document.getElementById("name").value,
       from_email: document.getElementById("email").value,
@@ -848,6 +858,7 @@
       });
   });
 </script>
+
 
 
   </main>
